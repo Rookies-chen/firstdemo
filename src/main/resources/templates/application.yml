@@ -1,0 +1,13 @@
+server:
+  part: 8888
+
+spring:
+  datasource:
+    username: root
+    password: 199777
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:Mapping/*Mapper.xml
+  type-aliases-package: com.comfirstdemo.bean
